@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{inputenc}
+\usepackage[a4paper, left=2.0cm, right=2.0cm, top=2.0cm, bottom=2.0cm, headsep=0.0cm]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{lscape}
+
+\usepackage[ddmmyyyy,hhmmss]{datetime}
+\renewcommand{\dateseparator}{.}
+
+\usepackage{hyperref}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\define}[1]{\textit{#1}}
+\newcommand{\paren}[1]{\! \left(#1 \right)}
+\newcommand{\set}[1]{\! \left\{#1 \right\}}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\begin{document}
+\noindent Piotr Idzik \hfill ver. \today\ \currenttime{}
+
+\vspace*{1cm}
+This note contains an example of a nowhere continuous weakly Picard operator.
+Such function contradicts Lemma 1 in~\cite{VasileBerinde2011}.
+
+\begin{definition}[{{\cite[Definition 2]{VasileBerinde2011}}}]
+    Let $X$ be a metric space.
+    We say that a mapping $f \colon X \to X$ is a \define{weakly Picard operator} if
+    for each $x \in X$ the sequence $(f^n(x))_{n \in \N}$
+    is convergent to $b_x \in X$, which is a fixed point of $f$.
+\end{definition}
+
+\begin{lemma}[{{\cite[Lemma 1]{VasileBerinde2011}}}]
+    Let $f \colon X \to X$ be a weakly Picard operator and let $b \in X$ be a fixed point of $f$.
+    Then $f$ is continuous at point $b$. 
+\end{lemma}
+
+\begin{example}
+    For $q \in \Q$ let $n_q \in \Z$ and $d_q \in \N$ be such that $q = \frac{n_q}{d_q}$ and $\gcd\paren{n_q, d_q} = 1$.
+    Consider a function $f \colon \R \to \R$ defined as
+    \begin{equation*}
+        f(x) = \left\{ \begin{array}{ll}
+            0, & x \in \R \setminus \Q,\\
+            d_x, & x \in \Q.
+               \end{array} \right.
+    \end{equation*} 
+    Notice that $f(\R) = \N_0$ and $f(\N_0) = \set{1}$, hence for all $x \in \R$ we get $f\paren{f\paren{x}} = 1 = f\paren{1}$.
+    Furthermore $f$ is discontinuous at each point of $\R$.       
+\end{example}
+
+\bibliography{bib_data}{}
+\bibliographystyle{plain}
+\end{document}
+ 
