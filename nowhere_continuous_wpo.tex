@@ -41,6 +41,8 @@
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{example}[theorem]{Example}
 
+\renewcommand{\GenericWarning}[2]{\GenericError{#1}{#2}{}{This warning has been turned into a fatal error.}}
+
 \begin{document}
 \noindent Piotr Idzik \hfill ver. \today\ \currenttime{}
 
@@ -57,7 +59,7 @@ Such function contradicts Lemma 1 in~\cite{VasileBerinde2011}.
 
 \begin{lemma}[{{\cite[Lemma 1]{VasileBerinde2011}}}]
     Let $f \colon X \to X$ be a weakly Picard operator and let $b \in X$ be a fixed point of $f$.
-    Then $f$ is continuous at point $b$. 
+    Then $f$ is continuous at point $b$.
 \end{lemma}
 
 \begin{example}
@@ -68,12 +70,11 @@ Such function contradicts Lemma 1 in~\cite{VasileBerinde2011}.
             0, & x \in \R \setminus \Q,\\
             d_x, & x \in \Q.
                \end{array} \right.
-    \end{equation*} 
+    \end{equation*}
     Notice that $f(\R) = \N_0$ and $f(\N_0) = \set{1}$, hence for all $x \in \R$ we get $f\paren{f\paren{x}} = 1 = f\paren{1}$.
-    Furthermore $f$ is discontinuous at each point of $\R$.       
+    Furthermore $f$ is discontinuous at each point of $\R$.
 \end{example}
 
 \bibliography{bib_data}{}
 \bibliographystyle{plain}
 \end{document}
- 
