@@ -7,7 +7,7 @@ on:
     - cron: '45 */3 * * *'
 
 jobs:
-  build:
+  all_url_check:
     runs-on: ubuntu-latest
 
     steps:
