@@ -1,6 +1,6 @@
 [![build_document](https://github.com/vil02/nowhere_continuous_wpo/actions/workflows/build_document.yml/badge.svg)](https://github.com/vil02/nowhere_continuous_wpo/actions/workflows/build_document.yml)
 [![latex_linter_check](https://github.com/vil02/nowhere_continuous_wpo/actions/workflows/chktex.yml/badge.svg)](https://github.com/vil02/nowhere_continuous_wpo/actions/workflows/chktex.yml)
-[![qpdf_check](https://github.com/vil02/nowhere_continuous_wpo/actions/workflows/qpdf_check.yml/badge.svg)](https://github.com/vil02/nowhere_continuous_wpo/actions/workflows/qpdf_check.yml)
+[![pdf_check](https://github.com/vil02/nowhere_continuous_wpo/actions/workflows/pdf_check.yml/badge.svg)](https://github.com/vil02/nowhere_continuous_wpo/actions/workflows/pdf_check.yml)
 
 [This note](./generated/nowhere_continuous_wpo.pdf) ([download](https://raw.githubusercontent.com/vil02/nowhere_continuous_wpo/master/generated/nowhere_continuous_wpo.pdf)) contains an example of nowhere continuous (weakly) Picard operator and a motivation to consider such a function.
 It was presented during the following talks:
