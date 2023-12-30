@@ -1,0 +1,12 @@
+---
+image:
+  file: gitpod.dockerfile
+
+tasks:
+  - init: |
+      ./verify_checksum_data.sh
+
+github:
+  prebuilds:
+    addComment: true
+...
